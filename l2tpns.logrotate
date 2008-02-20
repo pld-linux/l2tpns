@@ -1,0 +1,6 @@
+/var/log/l2tpns {
+	missingok
+	postrotate
+		/bin/killall -HUP l2tpns
+	endscript
+}
